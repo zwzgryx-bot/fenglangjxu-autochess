@@ -9,11 +9,11 @@
  */
 
 import { _decorator, Component, Node, Prefab, instantiate } from 'cc'
-import { GameManager } from './core/GameManager'
-import { UIManager, openPage, setText, updatePageData } from './core/UIManager'
-import { BattleSystem } from './battle/BattleSystem'
-import { ShopSystem } from './shop/ShopSystem'
-import { SynergyCalculator } from './battle/SynergyCalculator'
+import { GameManager } from '../core/GameManager'
+import { UIManager, openPage, setText, updatePageData } from '../core/UIManager'
+import { BattleSystem } from './BattleSystem'
+import { ShopSystem } from '../shop/ShopSystem'
+import { SynergyCalculator } from './SynergyCalculator'
 
 const { ccclass, property } = _decorator
 

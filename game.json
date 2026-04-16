@@ -1,0 +1,50 @@
+{
+  "description": "封狼居胥自走棋",
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "temp"
+      },
+      {
+        "type": "folder",
+        "value": "library"
+      },
+      {
+        "type": "folder",
+        "value": "local"
+      }
+    ]
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": true,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "compileType": "game",
+  "libVersion": "2.19.4",
+  "appid": "wx_xxxxxxxxxxxxxxxx",
+  "projectname": "fenglangjxu-autochess",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {}
+}

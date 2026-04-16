@@ -1,0 +1,10 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "封狼居胥",
+  "id": "fenglangjxu-autochess",
+  "version": "1.0.0",
+  "creator": {
+    "version": "3.8.2"
+  }
+}

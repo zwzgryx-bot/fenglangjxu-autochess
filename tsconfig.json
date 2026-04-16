@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "lib": ["ES2015"],
+    "outDir": "./temp/declarations",
+    "rootDir": "./assets/scripts",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": [
+      "./temp/declarations",
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "@core/*": ["./assets/scripts/core/*"],
+      "@chess/*": ["./assets/scripts/chess/*"],
+      "@battle/*": ["./assets/scripts/battle/*"],
+      "@economy/*": ["./assets/scripts/economy/*"],
+      "@shop/*": ["./assets/scripts/shop/*"],
+      "@ai/*": ["./assets/scripts/ai/*"],
+      "@utils/*": ["./assets/scripts/utils/*"]
+    }
+  },
+  "include": [
+    "assets/scripts/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "temp",
+    "build",
+    "library"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "modules": {
+    "choice": {
+      "2d": true,
+      "physics-cannon": false,
+      "physics-builtin": false,
+      "physics-ammo": false,
+      "ui": true,
+      "particle": true,
+      "tween": true,
+      "terrain": false,
+      "webview": false,
+      "videoplayer": false,
+      "spine": false,
+      "dragon-bones": false
+    }
+  },
+  "scriptingDefineOptions": {
+    "WECHAT_GAME": true
+  },
+  "startScene": "assets/scenes/loading.scene",
+  "scriptPreload": [],
+  "screenOrientation": "landscape",
+  "resolution": {
+    "policy": 0,
+    "width": 1280,
+    "height": 720
+  },
+  "groupList": [
+    "default",
+    "ui",
+    "chess",
+    "effect"
+  ],
+  "collisionMatrix": {
+    "default": {
+      "mask": 1
+    },
+    "ui": {
+      "mask": 2
+    },
+    "chess": {
+      "mask": 4,
+      "collisionWith": ["chess"]
+    },
+    "effect": {
+      "mask": 8
+    }
+  }
+}

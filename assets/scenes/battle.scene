@@ -1,0 +1,616 @@
+{
+  "@_typename": "cc.SceneAsset",
+  "_name": "Battle",
+  "_objFlags": 0,
+  "_native": "",
+  "scene": {
+    "@_typename": "cc.Scene",
+    "_name": "Battle",
+    "_objFlags": 0,
+    "_children": [
+      {
+        "@_typename": "cc.Node",
+        "_name": "Canvas",
+        "_objFlags": 0,
+        "_lpos": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "_lrot": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "_lscl": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "_layer": 1073741824,
+        "_children": [
+          {
+            "@_typename": "cc.Node",
+            "_name": "BattlePanel",
+            "_objFlags": 0,
+            "_lpos": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "_lrot": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "_lscl": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "_layer": 1073741824,
+            "_children": [
+              {
+                "@_typename": "cc.Node",
+                "_name": "TopInfo",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 300,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [
+                  {
+                    "@_typename": "cc.Node",
+                    "_name": "PlayerHP",
+                    "_objFlags": 0,
+                    "_lpos": {
+                      "x": -500,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "_lrot": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "_lscl": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "_layer": 1073741824,
+                    "_children": [],
+                    "_components": [
+                      {
+                        "@_typename": "cc.cc.Label",
+                        "_name": "cc.Label",
+                        "_objFlags": 0,
+                        "string": "HP: 100",
+                        "font_size": 28,
+                        "color": [
+                          255,
+                          100,
+                          100,
+                          255
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "@_typename": "cc.Node",
+                    "_name": "RoundDisplay",
+                    "_objFlags": 0,
+                    "_lpos": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "_lrot": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "_lscl": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "_layer": 1073741824,
+                    "_children": [],
+                    "_components": [
+                      {
+                        "@_typename": "cc.cc.Label",
+                        "_name": "cc.Label",
+                        "_objFlags": 0,
+                        "string": "第 1 回合",
+                        "font_size": 28,
+                        "color": [
+                          255,
+                          255,
+                          255,
+                          255
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "@_typename": "cc.Node",
+                    "_name": "EnemyHP",
+                    "_objFlags": 0,
+                    "_lpos": {
+                      "x": 500,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "_lrot": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "_lscl": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "_layer": 1073741824,
+                    "_children": [],
+                    "_components": [
+                      {
+                        "@_typename": "cc.cc.Label",
+                        "_name": "cc.Label",
+                        "_objFlags": 0,
+                        "string": "HP: 100",
+                        "font_size": 28,
+                        "color": [
+                          255,
+                          100,
+                          100,
+                          255
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.UITransform",
+                    "_name": "cc.UITransform",
+                    "_objFlags": 0,
+                    "width": 1200,
+                    "height": 80
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "ChessboardArea",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.UITransform",
+                    "_name": "cc.UITransform",
+                    "_objFlags": 0,
+                    "width": 800,
+                    "height": 400
+                  },
+                  {
+                    "@_typename": "cc.cc.Sprite",
+                    "_name": "cc.Sprite",
+                    "_objFlags": 0,
+                    "color": [
+                      50,
+                      50,
+                      70,
+                      100
+                    ]
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "ShopPanel",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": -250,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [
+                  {
+                    "@_typename": "cc.Node",
+                    "_name": "ShopSlots",
+                    "_objFlags": 0,
+                    "_lpos": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "_lrot": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "_lscl": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "_layer": 1073741824,
+                    "_children": [],
+                    "_components": [
+                      {
+                        "@_typename": "cc.horizontal",
+                        "_name": "horizontal",
+                        "_objFlags": 0,
+                        "spacing": 10
+                      }
+                    ]
+                  },
+                  {
+                    "@_typename": "cc.Node",
+                    "_name": "ShopControls",
+                    "_objFlags": 0,
+                    "_lpos": {
+                      "x": 400,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "_lrot": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "_lscl": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "_layer": 1073741824,
+                    "_children": [
+                      {
+                        "@_typename": "cc.Node",
+                        "_name": "GoldDisplay",
+                        "_objFlags": 0,
+                        "_lpos": {
+                          "x": 0,
+                          "y": 50,
+                          "z": 0
+                        },
+                        "_lrot": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 0,
+                          "w": 1
+                        },
+                        "_lscl": {
+                          "x": 1,
+                          "y": 1,
+                          "z": 1
+                        },
+                        "_layer": 1073741824,
+                        "_children": [],
+                        "_components": [
+                          {
+                            "@_typename": "cc.cc.Label",
+                            "_name": "cc.Label",
+                            "_objFlags": 0,
+                            "string": "💰 50",
+                            "font_size": 28,
+                            "color": [
+                              255,
+                              215,
+                              0,
+                              255
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "@_typename": "cc.Node",
+                        "_name": "RefreshButton",
+                        "_objFlags": 0,
+                        "_lpos": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 0
+                        },
+                        "_lrot": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 0,
+                          "w": 1
+                        },
+                        "_lscl": {
+                          "x": 1,
+                          "y": 1,
+                          "z": 1
+                        },
+                        "_layer": 1073741824,
+                        "_children": [
+                          {
+                            "@_typename": "cc.Node",
+                            "_name": "Label",
+                            "_objFlags": 0,
+                            "_lpos": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 0
+                            },
+                            "_lrot": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 0,
+                              "w": 1
+                            },
+                            "_lscl": {
+                              "x": 1,
+                              "y": 1,
+                              "z": 1
+                            },
+                            "_layer": 1073741824,
+                            "_children": [],
+                            "_components": [
+                              {
+                                "@_typename": "cc.cc.Label",
+                                "_name": "cc.Label",
+                                "_objFlags": 0,
+                                "string": "刷新 (2G)",
+                                "font_size": 24,
+                                "color": [
+                                  255,
+                                  255,
+                                  255,
+                                  255
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "_components": [
+                          {
+                            "@_typename": "cc.cc.UITransform",
+                            "_name": "cc.UITransform",
+                            "_objFlags": 0,
+                            "width": 120,
+                            "height": 50
+                          },
+                          {
+                            "@_typename": "cc.cc.Sprite",
+                            "_name": "cc.Sprite",
+                            "_objFlags": 0
+                          },
+                          {
+                            "@_typename": "cc.cc.Button",
+                            "_name": "cc.Button",
+                            "_objFlags": 0
+                          }
+                        ]
+                      },
+                      {
+                        "@_typename": "cc.Node",
+                        "_name": "LevelUpButton",
+                        "_objFlags": 0,
+                        "_lpos": {
+                          "x": 0,
+                          "y": -50,
+                          "z": 0
+                        },
+                        "_lrot": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 0,
+                          "w": 1
+                        },
+                        "_lscl": {
+                          "x": 1,
+                          "y": 1,
+                          "z": 1
+                        },
+                        "_layer": 1073741824,
+                        "_children": [
+                          {
+                            "@_typename": "cc.Node",
+                            "_name": "Label",
+                            "_objFlags": 0,
+                            "_lpos": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 0
+                            },
+                            "_lrot": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 0,
+                              "w": 1
+                            },
+                            "_lscl": {
+                              "x": 1,
+                              "y": 1,
+                              "z": 1
+                            },
+                            "_layer": 1073741824,
+                            "_children": [],
+                            "_components": [
+                              {
+                                "@_typename": "cc.cc.Label",
+                                "_name": "cc.Label",
+                                "_objFlags": 0,
+                                "string": "升级 (4G)",
+                                "font_size": 24,
+                                "color": [
+                                  255,
+                                  255,
+                                  255,
+                                  255
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "_components": [
+                          {
+                            "@_typename": "cc.cc.UITransform",
+                            "_name": "cc.UITransform",
+                            "_objFlags": 0,
+                            "width": 120,
+                            "height": 50
+                          },
+                          {
+                            "@_typename": "cc.cc.Sprite",
+                            "_name": "cc.Sprite",
+                            "_objFlags": 0
+                          },
+                          {
+                            "@_typename": "cc.cc.Button",
+                            "_name": "cc.Button",
+                            "_objFlags": 0
+                          }
+                        ]
+                      }
+                    ],
+                    "_components": []
+                  }
+                ],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.UITransform",
+                    "_name": "cc.UITransform",
+                    "_objFlags": 0,
+                    "width": 1000,
+                    "height": 180
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "BattleController",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [],
+                "_components": [
+                  {
+                    "@_typename": "cc.BattleController",
+                    "_name": "BattleController",
+                    "_objFlags": 0
+                  }
+                ]
+              }
+            ],
+            "_components": [
+              {
+                "@_typename": "cc.cc.UITransform",
+                "_name": "cc.UITransform",
+                "_objFlags": 0,
+                "width": 1280,
+                "height": 720
+              }
+            ]
+          }
+        ],
+        "_components": [
+          {
+            "@_typename": "cc.cc.Canvas",
+            "_name": "cc.Canvas",
+            "_objFlags": 0
+          }
+        ]
+      },
+      {
+        "@_typename": "cc.Node",
+        "_name": "Camera",
+        "_objFlags": 0,
+        "_lpos": {
+          "x": 0,
+          "y": 0,
+          "z": 1000
+        },
+        "_lrot": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "_lscl": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "_layer": 1073741824,
+        "_children": [],
+        "_components": [
+          {
+            "@_typename": "cc.cc.Camera",
+            "_name": "cc.Camera",
+            "_objFlags": 0
+          }
+        ]
+      }
+    ]
+  }
+}

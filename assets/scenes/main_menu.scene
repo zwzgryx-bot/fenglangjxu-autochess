@@ -1,0 +1,350 @@
+{
+  "@_typename": "cc.SceneAsset",
+  "_name": "MainMenu",
+  "_objFlags": 0,
+  "_native": "",
+  "scene": {
+    "@_typename": "cc.Scene",
+    "_name": "MainMenu",
+    "_objFlags": 0,
+    "_children": [
+      {
+        "@_typename": "cc.Node",
+        "_name": "Canvas",
+        "_objFlags": 0,
+        "_lpos": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "_lrot": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "_lscl": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "_layer": 1073741824,
+        "_children": [
+          {
+            "@_typename": "cc.Node",
+            "_name": "MainMenuPanel",
+            "_objFlags": 0,
+            "_lpos": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "_lrot": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "_lscl": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "_layer": 1073741824,
+            "_children": [
+              {
+                "@_typename": "cc.Node",
+                "_name": "GameTitle",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 200,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.Label",
+                    "_name": "cc.Label",
+                    "_objFlags": 0,
+                    "string": "封狼居胥",
+                    "font_size": 80,
+                    "color": [
+                      255,
+                      215,
+                      0,
+                      255
+                    ]
+                  },
+                  {
+                    "@_typename": "cc.cc.Label",
+                    "_name": "Subtitle",
+                    "_objFlags": 0,
+                    "string": "自走棋",
+                    "font_size": 40,
+                    "color": [
+                      200,
+                      200,
+                      200,
+                      255
+                    ]
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "StartButton",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 50,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [
+                  {
+                    "@_typename": "cc.Node",
+                    "_name": "Label",
+                    "_objFlags": 0,
+                    "_lpos": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "_lrot": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "_lscl": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "_layer": 1073741824,
+                    "_children": [],
+                    "_components": [
+                      {
+                        "@_typename": "cc.cc.Label",
+                        "_name": "cc.Label",
+                        "_objFlags": 0,
+                        "string": "开始游戏",
+                        "font_size": 32,
+                        "color": [
+                          255,
+                          255,
+                          255,
+                          255
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.UITransform",
+                    "_name": "cc.UITransform",
+                    "_objFlags": 0,
+                    "width": 200,
+                    "height": 80
+                  },
+                  {
+                    "@_typename": "cc.cc.Sprite",
+                    "_name": "cc.Sprite",
+                    "_objFlags": 0
+                  },
+                  {
+                    "@_typename": "cc.cc.Button",
+                    "_name": "cc.Button",
+                    "_objFlags": 0
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "SettingsButton",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": -50,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [
+                  {
+                    "@_typename": "cc.Node",
+                    "_name": "Label",
+                    "_objFlags": 0,
+                    "_lpos": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "_lrot": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "_lscl": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "_layer": 1073741824,
+                    "_children": [],
+                    "_components": [
+                      {
+                        "@_typename": "cc.cc.Label",
+                        "_name": "cc.Label",
+                        "_objFlags": 0,
+                        "string": "设置",
+                        "font_size": 32,
+                        "color": [
+                          255,
+                          255,
+                          255,
+                          255
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.UITransform",
+                    "_name": "cc.UITransform",
+                    "_objFlags": 0,
+                    "width": 200,
+                    "height": 80
+                  },
+                  {
+                    "@_typename": "cc.cc.Sprite",
+                    "_name": "cc.Sprite",
+                    "_objFlags": 0
+                  },
+                  {
+                    "@_typename": "cc.cc.Button",
+                    "_name": "cc.Button",
+                    "_objFlags": 0
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "MainMenuController",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [],
+                "_components": [
+                  {
+                    "@_typename": "cc.MainMenuController",
+                    "_name": "MainMenuController",
+                    "_objFlags": 0
+                  }
+                ]
+              }
+            ],
+            "_components": [
+              {
+                "@_typename": "cc.cc.UITransform",
+                "_name": "cc.UITransform",
+                "_objFlags": 0,
+                "width": 1280,
+                "height": 720
+              }
+            ]
+          }
+        ],
+        "_components": [
+          {
+            "@_typename": "cc.cc.Canvas",
+            "_name": "cc.Canvas",
+            "_objFlags": 0
+          }
+        ]
+      },
+      {
+        "@_typename": "cc.Node",
+        "_name": "Camera",
+        "_objFlags": 0,
+        "_lpos": {
+          "x": 0,
+          "y": 0,
+          "z": 1000
+        },
+        "_lrot": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "_lscl": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "_layer": 1073741824,
+        "_children": [],
+        "_components": [
+          {
+            "@_typename": "cc.cc.Camera",
+            "_name": "cc.Camera",
+            "_objFlags": 0
+          }
+        ]
+      }
+    ]
+  }
+}

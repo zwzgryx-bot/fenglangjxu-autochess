@@ -271,6 +271,165 @@ export class PrefabBuilder extends Component {
     
     console.log('[PrefabBuilder] 创建完成！请右键节点 → Create → Prefab 保存')
   }
+  
+  /**
+   * 创建 UI 预制体 (完整版)
+   */
+  public createUIPrefabs() {
+    if (!editor.EditorExtends) {
+      console.log('[PrefabBuilder] 只能在编辑器模式下运行')
+      return
+    }
+    
+    console.log('[PrefabBuilder] 创建 UI 预制体...')
+    
+    // 创建按钮
+    const btnNormal = this.createButton('Button', '普通按钮')
+    btnNormal.parent = this.node
+    btnNormal.setPosition(-200, 100, 0)
+    console.log('✅ 创建 Button')
+    
+    // 创建文本输入框
+    const inputBox = this.createInputBox('InputBox', '输入框')
+    inputBox.parent = this.node
+    inputBox.setPosition(0, 100, 0)
+    console.log('✅ 创建 InputBox')
+    
+    // 创建列表项
+    const listItem = this.createListItem('ListItem', '列表项')
+    listItem.parent = this.node
+    listItem.setPosition(200, 100, 0)
+    console.log('✅ 创建 ListItem')
+    
+    // 创建弹窗
+    const dialog = this.createDialog('Dialog', '弹窗')
+    dialog.parent = this.node
+    dialog.setPosition(0, -100, 0)
+    console.log('✅ 创建 Dialog')
+    
+    // 创建进度条
+    const progressBar = this.createProgressBar('ProgressBar', '进度条')
+    progressBar.parent = this.node
+    progressBar.setPosition(0, -250, 0)
+    console.log('✅ 创建 ProgressBar')
+    
+    console.log('[PrefabBuilder] UI 预制体创建完成！')
+  }
+  
+  private createButton(name: string, label: string): Node {
+    const node = new Node(name)
+    const bg = node.addComponent('cc.Sprite') as any
+    bg.color.set(60, 150, 220, 255)
+    const transform = node.addComponent('cc.UITransform')
+    transform.setContentSize(200, 80)
+    
+    const labelNode = new Node('Label')
+    labelNode.parent = node
+    const labelComp = labelNode.addComponent('cc.Label') as any
+    labelComp.string = label
+    labelComp.color.set(255, 255, 255, 255)
+    labelComp.fontSize = 32
+    labelComp.horizontalAlign = 1
+    labelComp.verticalAlign = 1
+    
+    node.addComponent('cc.Button')
+    return node
+  }
+  
+  private createInputBox(name: string, placeholder: string): Node {
+    const node = new Node(name)
+    const bg = node.addComponent('cc.Sprite') as any
+    bg.color.set(50, 50, 70, 255)
+    const transform = node.addComponent('cc.UITransform')
+    transform.setContentSize(300, 60)
+    
+    const textNode = new Node('TEXT_LABEL')
+    textNode.parent = node
+    textNode.setPosition(-140, 0, 0)
+    const textComp = textNode.addComponent('cc.Label') as any
+    textComp.string = placeholder
+    textComp.color.set(200, 200, 200, 150)
+    textComp.fontSize = 28
+    
+    node.addComponent('cc.EditBox')
+    return node
+  }
+  
+  private createListItem(name: string, content: string): Node {
+    const node = new Node(name)
+    const bg = node.addComponent('cc.Sprite') as any
+    bg.color.set(60, 60, 80, 200)
+    const transform = node.addComponent('cc.UITransform')
+    transform.setContentSize(500, 80)
+    
+    const contentNode = new Node('Content')
+    contentNode.parent = node
+    contentNode.setPosition(-200, 0, 0)
+    const contentComp = contentNode.addComponent('cc.Label') as any
+    contentComp.string = content
+    contentComp.color.set(255, 255, 255, 255)
+    contentComp.fontSize = 28
+    contentComp.horizontalAlign = 0
+    
+    return node
+  }
+  
+  private createDialog(name: string, title: string): Node {
+    const node = new Node(name)
+    const bg = node.addComponent('cc.Sprite') as any
+    bg.color.set(30, 30, 50, 230)
+    const transform = node.addComponent('cc.UITransform')
+    transform.setContentSize(600, 400)
+    
+    const titleNode = new Node('Title')
+    titleNode.parent = node
+    titleNode.setPosition(0, 160, 0)
+    const titleComp = titleNode.addComponent('cc.Label') as any
+    titleComp.string = title
+    titleComp.color.set(255, 215, 0, 255)
+    titleComp.fontSize = 36
+    
+    const closeBtn = new Node('CloseButton')
+    closeBtn.parent = node
+    closeBtn.setPosition(260, 160, 0)
+    const closeBg = closeBtn.addComponent('cc.Sprite') as any
+    closeBg.color.set(200, 50, 50, 255)
+    const closeTransform = closeBtn.addComponent('cc.UITransform')
+    closeTransform.setContentSize(60, 60)
+    const closeLabel = new Node('Label')
+    closeLabel.parent = closeBtn
+    const closeLabelComp = closeLabel.addComponent('cc.Label') as any
+    closeLabelComp.string = '×'
+    closeLabelComp.color.set(255, 255, 255, 255)
+    closeLabelComp.fontSize = 40
+    
+    return node
+  }
+  
+  private createProgressBar(name: string, label: string): Node {
+    const node = new Node(name)
+    const bg = node.addComponent('cc.Sprite') as any
+    bg.color.set(50, 50, 70, 255)
+    const transform = node.addComponent('cc.UITransform')
+    transform.setContentSize(400, 40)
+    
+    const barNode = new Node('Bar')
+    barNode.parent = node
+    barNode.setPosition(-180, 0, 0)
+    const barBg = barNode.addComponent('cc.Sprite') as any
+    barBg.color.set(255, 215, 0, 255)
+    const barTransform = barNode.addComponent('cc.UITransform')
+    barTransform.setContentSize(0, 40)
+    
+    const labelNode = new Node('Label')
+    labelNode.parent = node
+    const labelComp = labelNode.addComponent('cc.Label') as any
+    labelComp.string = label
+    labelComp.color.set(255, 255, 255, 255)
+    labelComp.fontSize = 24
+    
+    return node
+  }
 }
 
 [menu]

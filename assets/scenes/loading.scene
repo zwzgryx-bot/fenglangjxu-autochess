@@ -1,0 +1,311 @@
+{
+  "@_typename": "cc.SceneAsset",
+  "_name": "Loading",
+  "_objFlags": 0,
+  "_native": "",
+  "scene": {
+    "@_typename": "cc.Scene",
+    "_name": "Loading",
+    "_objFlags": 0,
+    "_children": [
+      {
+        "@_typename": "cc.Node",
+        "_name": "Canvas",
+        "_objFlags": 0,
+        "_lpos": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "_lrot": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "_lscl": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "_layer": 1073741824,
+        "_children": [
+          {
+            "@_typename": "cc.Node",
+            "_name": "LoadingPanel",
+            "_objFlags": 0,
+            "_lpos": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "_lrot": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "_lscl": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "_layer": 1073741824,
+            "_children": [
+              {
+                "@_typename": "cc.Node",
+                "_name": "GameLogo",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 150,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.Label",
+                    "_name": "cc.Label",
+                    "_objFlags": 0,
+                    "string": "封狼居胥",
+                    "font_size": 64,
+                    "color": [
+                      255,
+                      215,
+                      0,
+                      255
+                    ]
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "LoadingBar",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [
+                  {
+                    "@_typename": "cc.Node",
+                    "_name": "ProgressBar",
+                    "_objFlags": 0,
+                    "_lpos": {
+                      "x": -270,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "_lrot": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "_lscl": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "_layer": 1073741824,
+                    "_children": [],
+                    "_components": [
+                      {
+                        "@_typename": "cc.cc.UITransform",
+                        "_name": "cc.UITransform",
+                        "_objFlags": 0,
+                        "width": 0,
+                        "height": 36
+                      },
+                      {
+                        "@_typename": "cc.cc.Sprite",
+                        "_name": "cc.Sprite",
+                        "_objFlags": 0,
+                        "color": [
+                          255,
+                          215,
+                          0,
+                          255
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.UITransform",
+                    "_name": "cc.UITransform",
+                    "_objFlags": 0,
+                    "width": 600,
+                    "height": 40
+                  },
+                  {
+                    "@_typename": "cc.cc.Sprite",
+                    "_name": "cc.Sprite",
+                    "_objFlags": 0,
+                    "color": [
+                      50,
+                      50,
+                      70,
+                      255
+                    ]
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "LoadingText",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": -80,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [],
+                "_components": [
+                  {
+                    "@_typename": "cc.cc.Label",
+                    "_name": "cc.Label",
+                    "_objFlags": 0,
+                    "string": "加载中...",
+                    "font_size": 24,
+                    "color": [
+                      200,
+                      200,
+                      200,
+                      255
+                    ]
+                  }
+                ]
+              },
+              {
+                "@_typename": "cc.Node",
+                "_name": "LoadingController",
+                "_objFlags": 0,
+                "_lpos": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "_lrot": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "_lscl": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "_layer": 1073741824,
+                "_children": [],
+                "_components": [
+                  {
+                    "@_typename": "cc.LoadingController",
+                    "_name": "LoadingController",
+                    "_objFlags": 0
+                  }
+                ]
+              }
+            ],
+            "_components": [
+              {
+                "@_typename": "cc.cc.UITransform",
+                "_name": "cc.UITransform",
+                "_objFlags": 0,
+                "width": 800,
+                "height": 600
+              },
+              {
+                "@_typename": "cc.cc.Sprite",
+                "_name": "cc.Sprite",
+                "_objFlags": 0,
+                "color": [
+                  20,
+                  20,
+                  30,
+                  200
+                ]
+              }
+            ]
+          }
+        ],
+        "_components": [
+          {
+            "@_typename": "cc.cc.Canvas",
+            "_name": "cc.Canvas",
+            "_objFlags": 0
+          }
+        ]
+      },
+      {
+        "@_typename": "cc.Node",
+        "_name": "Camera",
+        "_objFlags": 0,
+        "_lpos": {
+          "x": 0,
+          "y": 0,
+          "z": 1000
+        },
+        "_lrot": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "_lscl": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "_layer": 1073741824,
+        "_children": [],
+        "_components": [
+          {
+            "@_typename": "cc.cc.Camera",
+            "_name": "cc.Camera",
+            "_objFlags": 0
+          }
+        ]
+      }
+    ]
+  }
+}
